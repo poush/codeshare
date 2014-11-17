@@ -1,0 +1,677 @@
+<html lang="en"><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
+    <title>Bootstrap 3 Form Builder</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <link href="formbuilder3_data/bootstrap.css" rel="stylesheet">
+    <link href="formbuilder3_data/custom.css" rel="stylesheet">
+    <!--[if lt IE 9]>
+    <script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+  </head>
+<body>
+    <div class="container">
+      <div class="row clearfix">
+	          <!-- Components -->
+        <div class="col-md-6">
+          <h2>Drag &amp; Drop components</h2>
+          <hr>
+          <div class="tabbable">
+            <ul class="nav nav-tabs" id="formtabs">
+              <!-- Tab nav -->
+            <li class=""><a href="#input" data-toggle="tab">Input</a></li>
+<li class=""><a href="#radioscheckboxes" data-toggle="tab">Radios / Checkboxes</a></li>
+<li class=""><a href="#select" data-toggle="tab">Select</a></li>
+<li class="active"><a href="#buttons" data-toggle="tab">Buttons</a></li>
+<li><a href="#rendered" data-toggle="tab">Rendered</a></li>
+<li><a href="#about" data-toggle="tab">About</a></li>
+</ul>
+            <form class="form-horizontal" id="components" role="form">
+              <fieldset>
+                <div class="tab-content">
+                  <!-- Tabs of snippets go here -->
+                <div id="input" class="tab-pane"><div class="component"><!-- Text input-->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="textinput">Text Input</label>  
+  <div class="col-md-4">
+  <input id="textinput" name="textinput" placeholder="placeholder" class="form-control input-md" type="text">
+  <span class="help-block">help</span>  
+  </div>
+</div>
+</div><div class="component"><!-- Password input-->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="passwordinput">Password Input</label>
+  <div class="col-md-4">
+    <input id="passwordinput" name="passwordinput" placeholder="placeholder" class="form-control input-md" type="password">
+    <span class="help-block">help</span>
+  </div>
+</div>
+</div><div class="component"><!-- Search input-->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="searchinput">Search Input</label>
+  <div class="col-md-4">
+    <input id="searchinput" name="searchinput" placeholder="placeholder" class="form-control input-md" type="search">
+    <p class="help-block">help</p>
+  </div>
+</div>
+</div><div class="component"><!-- Prepended text-->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="prependedtext">Prepended Text</label>
+  <div class="col-md-4">
+    <div class="input-group">
+      <span class="input-group-addon">prepend</span>
+      <input id="prependedtext" name="prependedtext" class="form-control" placeholder="placeholder" type="text">
+    </div>
+    <p class="help-block">help</p>
+  </div>
+</div>
+</div><div class="component"><!-- Appended Input-->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="appendedtext">Appended Text</label>
+  <div class="col-md-4">
+    <div class="input-group">
+      <input id="appendedtext" name="appendedtext" class="form-control" placeholder="placeholder" type="text">
+      <span class="input-group-addon">append</span>
+    </div>
+    <p class="help-block">help</p>
+  </div>
+</div></div><div class="component"><!-- Prepended checkbox -->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="prependedcheckbox">Prepended Checkbox</label>
+  <div class="col-md-4">
+    <div class="input-group">
+      <span class="input-group-addon">     
+          <input type="checkbox">     
+      </span>
+      <input id="prependedcheckbox" name="prependedcheckbox" class="form-control" placeholder="placeholder" type="text">
+    </div>
+    <p class="help-block">help</p>
+  </div>
+</div>
+</div><div class="component"><!-- Appended checkbox -->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="appendedcheckbox">Appended Checkbox</label>
+  <div class="col-md-4">
+    <div class="input-group">
+      <input id="appendedcheckbox" name="appendedcheckbox" class="form-control" placeholder="placeholder" type="text">
+	        <span class="input-group-addon">     
+          <input type="checkbox">     
+      </span>
+    </div>
+    <p class="help-block">help</p>
+  </div>
+</div>
+</div><div class="component"><!-- Button Drop Down -->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="buttondropdown">Button Drop Down</label>
+  <div class="col-md-4">
+    <div class="input-group">
+      <input id="buttondropdown" name="buttondropdown" class="form-control" placeholder="placeholder" type="text">
+      <div class="input-group-btn">
+        <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+          Action
+          <span class="caret"></span>
+        </button>
+        <ul class="dropdown-menu pull-right">
+          <li><a href="#">Option one</a></li>
+          <li><a href="#">Option two</a></li>
+          <li><a href="#">Option three</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+</div><div class="component"><!-- Textarea -->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="textarea">Text Area</label>
+  <div class="col-md-4">                     
+    <textarea class="form-control" id="textarea" name="textarea">default text</textarea>
+  </div>
+</div>
+</div></div><div id="radioscheckboxes" class="tab-pane"><div class="component"><!-- Multiple Radios -->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="radios">Multiple Radios</label>
+  <div class="col-md-4">
+  <div class="radio">
+    <label for="radios-0">
+      <input name="radios" id="radios-0" value="1" type="radio">
+      Option one
+    </label>
+	</div>
+  <div class="radio">
+    <label for="radios-1">
+      <input name="radios" id="radios-1" value="2" type="radio">
+      Option two
+    </label>
+	</div>
+  </div>
+</div>
+</div><div class="component"><!-- Multiple Radios (inline) -->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="radios">Inline Radios</label>
+  <div class="col-md-4"> 
+    <label class="radio-inline" for="radios-0">
+      <input name="radios" id="radios-0" value="1" checked="checked" type="radio">
+      1
+    </label> 
+    <label class="radio-inline" for="radios-1">
+      <input name="radios" id="radios-1" value="2" type="radio">
+      2
+    </label> 
+    <label class="radio-inline" for="radios-2">
+      <input name="radios" id="radios-2" value="3" type="radio">
+      3
+    </label> 
+    <label class="radio-inline" for="radios-3">
+      <input name="radios" id="radios-3" value="4" type="radio">
+      4
+    </label>
+  </div>
+</div>
+</div><div class="component"><!-- Multiple Checkboxes -->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="checkboxes">Multiple Checkboxes</label>
+  <div class="col-md-4">
+  <div class="checkbox">
+    <label for="checkboxes-0">
+      <input name="checkboxes" id="checkboxes-0" value="1" type="checkbox">
+      Option one
+    </label>
+	</div>
+  <div class="checkbox">
+    <label for="checkboxes-1">
+      <input name="checkboxes" id="checkboxes-1" value="2" type="checkbox">
+      Option two
+    </label>
+	</div>
+  </div>
+</div>
+</div><div class="component"><!-- Multiple Checkboxes (inline) -->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="checkboxes">Inline Checkboxes</label>
+  <div class="col-md-4">
+    <label class="checkbox-inline" for="checkboxes-0">
+      <input name="checkboxes" id="checkboxes-0" value="1" type="checkbox">
+      1
+    </label>
+    <label class="checkbox-inline" for="checkboxes-1">
+      <input name="checkboxes" id="checkboxes-1" value="2" type="checkbox">
+      2
+    </label>
+    <label class="checkbox-inline" for="checkboxes-2">
+      <input name="checkboxes" id="checkboxes-2" value="3" type="checkbox">
+      3
+    </label>
+    <label class="checkbox-inline" for="checkboxes-3">
+      <input name="checkboxes" id="checkboxes-3" value="4" type="checkbox">
+      4
+    </label>
+  </div>
+</div>
+</div></div><div id="select" class="tab-pane"><div class="component"><!-- Select Basic -->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="selectbasic">Select Basic</label>
+  <div class="col-md-4">
+    <select id="selectbasic" name="selectbasic" class="form-control">
+      <option selected="selected" value="1">Option one</option>
+      <option value="2">Option two</option>
+    </select>
+  </div>
+</div>
+</div><div class="component"><!-- Select Multiple -->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="selectmultiple">Select Multiple</label>
+  <div class="col-md-4">
+    <select id="selectmultiple" name="selectmultiple" class="form-control" multiple="multiple">
+      <option value="1">Option one</option>
+      <option value="2">Option two</option>
+    </select>
+  </div>
+</div>
+</div></div><div id="buttons" class="tab-pane active"><div class="component"><!-- File Button --> 
+<div class="form-group">
+  <label class="col-md-4 control-label" for="filebutton">File Button</label>
+  <div class="col-md-4">
+    <input id="filebutton" name="filebutton" class="input-file" type="file">
+  </div>
+</div>
+</div><div class="component"><!-- Button -->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="singlebutton">Single Button</label>
+  <div class="col-md-4">
+    <button id="singlebutton" name="singlebutton" class="btn btn-primary">Button</button>
+  </div>
+</div>
+</div><div class="component"><!-- Button (Double) -->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="button1id">Double Button</label>
+  <div class="col-md-8">
+    <button id="button1id" name="button1id" class="btn btn-success">Good Button</button>
+    <button id="button2id" name="button2id" class="btn btn-danger">Scary Button</button>
+  </div>
+</div>
+</div></div><div id="rendered" class="tab-pane"><h3>Rendered source of your form:</h3>
+<textarea id="render" class="col-md-12">&lt;form 
+class="form-horizontal"&gt;
+&lt;fieldset&gt;
+
+&lt;!-- Form Name --&gt;
+&lt;legend&gt;Settings&lt;/legend&gt;
+
+&lt;!-- Text input--&gt;
+&lt;div class="form-group"&gt;
+  &lt;label class="col-md-4 control-label" for="SiteName"&gt;Site 
+Name&lt;/label&gt;  
+  &lt;div class="col-md-6"&gt;
+  &lt;input id="SiteName" name="SiteName" placeholder="Snippets Site" 
+class="form-control input-md" required="" type="text"&gt;
+  &lt;span class="help-block"&gt;Name/Title of your site&lt;/span&gt;  
+  &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;!-- Text input--&gt;
+&lt;div class="form-group"&gt;
+  &lt;label class="col-md-4 control-label" 
+for="Url"&gt;Url&lt;/label&gt;  
+  &lt;div class="col-md-6"&gt;
+  &lt;input id="Url" name="Url" placeholder="http://....something.." 
+class="form-control input-md" required="" type="text"&gt;
+  &lt;span class="help-block"&gt;Full url to your site including 
+http://&lt;/span&gt;  
+  &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;!-- Text input--&gt;
+&lt;div class="form-group"&gt;
+  &lt;label class="col-md-4 control-label" for="disqus"&gt;Disqus Short 
+Name&lt;/label&gt;  
+  &lt;div class="col-md-6"&gt;
+  &lt;input id="disqus" name="disqus" placeholder="something.." 
+class="form-control input-md" required="" type="text"&gt;
+  &lt;span class="help-block"&gt;Enter the disqus short name for disqus 
+comments on your website. If you do not have one then get one from 
+http://disqus.com&lt;/span&gt;  
+  &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;!-- Textarea --&gt;
+&lt;div class="form-group"&gt;
+  &lt;label class="col-md-4 control-label" for="adsense"&gt;Google 
+Adsense Code&lt;/label&gt;
+  &lt;div class="col-md-4"&gt;                     
+    &lt;textarea class="form-control" id="adsense" 
+name="adsense"&gt;&lt;/textarea&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;!-- File Button --&gt; 
+&lt;div class="form-group"&gt;
+  &lt;label class="col-md-4 control-label" for="filebutton"&gt;File 
+Button&lt;/label&gt;
+  &lt;div class="col-md-4"&gt;
+    &lt;input id="filebutton" name="filebutton" class="input-file" 
+type="file"&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;/fieldset&gt;
+&lt;/form&gt;
+</textarea>
+</div><div id="about" class="tab-pane"><h3>About</h3>
+
+<p>
+Created By Adam Moore (@<a href="http://twitter.com/minikomi">minikomi</a>) to help take the stress out of 
+writing all that markup to get bootstrap forms together. The original version of this was a big jQuery
+spaghetti mess, so as of March 2013 it has been rewritten using <a href="http://bootsnipp.com/j87klPolka/backbonejs.org">backbone.js</a> and 
+takes advantage of <a href="http://underscorejs.org/#template">underscode.js templates</a>.
+</p>
+
+<p>
+If you have a problem, or want a specific snippet added please check out the 
+<a href="https://github.com/minikomi/Bootstrap-Form-Builder">github project</a>. Note, this is only a simple tool so I'm not 
+that keen on adding many features (eg. saving/exporting forms, embedding forms etc.). 
+</p>
+
+<p>
+  Adding snippets is quite simple now (due to the rewrite!) so please don't hesitate to open an issue!
+</p>
+</div></div>
+              </fieldset>
+            </form>
+          </div>
+        </div>
+        <!-- / Components -->
+        <!-- Building Form. -->
+        <div class="col-md-6">
+          <div class="clearfix">
+            <h2>Your Form</h2>
+            <hr>
+            <div id="build">
+              <form id="target" class="form-horizontal">
+              <fieldset><div data-html="true" data-trigger="manual" data-title="Form Name" data-content="&lt;form role=&quot;form&quot;&gt;
+    
+      
+      
+    &lt;div class=&quot;form-group&quot;&gt;
+	&lt;label class=&quot;col-md-12 control-label&quot;&gt; Form Name &lt;/label&gt;
+	&lt;div class=&quot;col-md-10&quot;&gt;
+		&lt;input class='form-control field' data-type=&quot;input&quot; type='text' name='name' id='name' value ='Settings' /&gt;
+	&lt;/div&gt;
+&lt;/div&gt;
+    &lt;hr/&gt;
+    &lt;button id=&quot;save&quot; class='btn btn-info col-md-4'&gt;Save&lt;/button&gt;&amp;nbsp;&lt;button id=&quot;cancel&quot; class='btn btn-danger'&gt;Cancel&lt;/button&gt;
+&lt;/form&gt;
+" class="component"><!-- Form Name -->
+<legend>Settings</legend>
+</div><div data-html="true" data-trigger="manual" data-title="Text Input" data-content="&lt;form role=&quot;form&quot;&gt;
+    
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+    &lt;div class=&quot;form-group&quot;&gt;
+	&lt;label class=&quot;col-md-12 control-label&quot;&gt; ID / Name &lt;/label&gt;
+	&lt;div class=&quot;col-md-10&quot;&gt;
+		&lt;input class='form-control field' data-type=&quot;input&quot; type='text' name='id' id='id' value ='SiteName' /&gt;
+	&lt;/div&gt;
+&lt;/div&gt;&lt;div class=&quot;form-group&quot;&gt;
+	&lt;label class=&quot;col-md-12 control-label&quot;&gt; Label Text &lt;/label&gt;
+	&lt;div class=&quot;col-md-10&quot;&gt;
+		&lt;input class='form-control field' data-type=&quot;input&quot; type='text' name='label' id='label' value ='Site Name' /&gt;
+	&lt;/div&gt;
+&lt;/div&gt;&lt;div class=&quot;form-group&quot;&gt;
+	&lt;label class=&quot;col-md-12 control-label&quot;&gt; Placeholder &lt;/label&gt;
+	&lt;div class=&quot;col-md-10&quot;&gt;
+		&lt;input class='form-control field' data-type=&quot;input&quot; type='text' name='placeholder' id='placeholder' value ='Snippets Site' /&gt;
+	&lt;/div&gt;
+&lt;/div&gt;&lt;div class=&quot;form-group&quot;&gt;
+	&lt;label class=&quot;col-md-12 control-label&quot;&gt; Help Text &lt;/label&gt;
+	&lt;div class=&quot;col-md-10&quot;&gt;
+		&lt;input class='form-control field' data-type=&quot;input&quot; type='text' name='helptext' id='helptext' value ='Name/Title of your site' /&gt;
+	&lt;/div&gt;
+&lt;/div&gt;&lt;div class=&quot;checkbox&quot;&gt;
+	&lt;label&gt;
+	  &lt;input type=&quot;checkbox&quot; data-type=&quot;checkbox&quot; class=&quot;field&quot; name=&quot;required&quot; id=&quot;required&quot; checked=&quot;checked&quot; &gt;
+	  Required
+	&lt;/label&gt;
+&lt;/div&gt;
+&lt;div class=&quot;form-group&quot;&gt;
+	&lt;label class='col-md-4 control-label'&gt; Input Size &lt;/label&gt;
+	&lt;div class=&quot;col-md-5&quot;&gt;
+		&lt;select class=&quot;form-control field&quot; data-type=&quot;select&quot; id='inputsize'&gt;
+		
+		  &lt;option value=&quot;col-md-1&quot;  &gt;Mini&lt;/option&gt;
+		
+		  &lt;option value=&quot;col-md-2&quot;  &gt;Small&lt;/option&gt;
+		
+		  &lt;option value=&quot;col-md-4&quot;  &gt;Medium&lt;/option&gt;
+		
+		  &lt;option value=&quot;col-md-5&quot;  &gt;Large&lt;/option&gt;
+		
+		  &lt;option value=&quot;col-md-6&quot;  selected  &gt;Xlarge&lt;/option&gt;
+		
+		  &lt;option value=&quot;col-md-8&quot;  &gt;Xxlarge&lt;/option&gt;
+		
+		&lt;/select&gt;
+	&lt;/div&gt;
+&lt;/div&gt;
+
+    &lt;hr/&gt;
+    &lt;button id=&quot;save&quot; class='btn btn-info col-md-4'&gt;Save&lt;/button&gt;&amp;nbsp;&lt;button id=&quot;cancel&quot; class='btn btn-danger'&gt;Cancel&lt;/button&gt;
+&lt;/form&gt;
+" class="component"><!-- Text input-->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="SiteName">Site Name</label>  
+  <div class="col-md-6">
+  <input id="SiteName" name="SiteName" placeholder="Snippets Site" class="form-control input-md" required="" type="text">
+  <span class="help-block">Name/Title of your site</span>  
+  </div>
+</div>
+</div><div data-html="true" data-trigger="manual" data-title="Text Input" data-content="&lt;form role=&quot;form&quot;&gt;
+    
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+    &lt;div class=&quot;form-group&quot;&gt;
+	&lt;label class=&quot;col-md-12 control-label&quot;&gt; ID / Name &lt;/label&gt;
+	&lt;div class=&quot;col-md-10&quot;&gt;
+		&lt;input class='form-control field' data-type=&quot;input&quot; type='text' name='id' id='id' value ='Url' /&gt;
+	&lt;/div&gt;
+&lt;/div&gt;&lt;div class=&quot;form-group&quot;&gt;
+	&lt;label class=&quot;col-md-12 control-label&quot;&gt; Label Text &lt;/label&gt;
+	&lt;div class=&quot;col-md-10&quot;&gt;
+		&lt;input class='form-control field' data-type=&quot;input&quot; type='text' name='label' id='label' value ='Url' /&gt;
+	&lt;/div&gt;
+&lt;/div&gt;&lt;div class=&quot;form-group&quot;&gt;
+	&lt;label class=&quot;col-md-12 control-label&quot;&gt; Placeholder &lt;/label&gt;
+	&lt;div class=&quot;col-md-10&quot;&gt;
+		&lt;input class='form-control field' data-type=&quot;input&quot; type='text' name='placeholder' id='placeholder' value ='http://....something..' /&gt;
+	&lt;/div&gt;
+&lt;/div&gt;&lt;div class=&quot;form-group&quot;&gt;
+	&lt;label class=&quot;col-md-12 control-label&quot;&gt; Help Text &lt;/label&gt;
+	&lt;div class=&quot;col-md-10&quot;&gt;
+		&lt;input class='form-control field' data-type=&quot;input&quot; type='text' name='helptext' id='helptext' value ='Full url to your site including http://' /&gt;
+	&lt;/div&gt;
+&lt;/div&gt;&lt;div class=&quot;checkbox&quot;&gt;
+	&lt;label&gt;
+	  &lt;input type=&quot;checkbox&quot; data-type=&quot;checkbox&quot; class=&quot;field&quot; name=&quot;required&quot; id=&quot;required&quot; checked=&quot;checked&quot; &gt;
+	  Required
+	&lt;/label&gt;
+&lt;/div&gt;
+&lt;div class=&quot;form-group&quot;&gt;
+	&lt;label class='col-md-4 control-label'&gt; Input Size &lt;/label&gt;
+	&lt;div class=&quot;col-md-5&quot;&gt;
+		&lt;select class=&quot;form-control field&quot; data-type=&quot;select&quot; id='inputsize'&gt;
+		
+		  &lt;option value=&quot;col-md-1&quot;  &gt;Mini&lt;/option&gt;
+		
+		  &lt;option value=&quot;col-md-2&quot;  &gt;Small&lt;/option&gt;
+		
+		  &lt;option value=&quot;col-md-4&quot;  &gt;Medium&lt;/option&gt;
+		
+		  &lt;option value=&quot;col-md-5&quot;  &gt;Large&lt;/option&gt;
+		
+		  &lt;option value=&quot;col-md-6&quot;  selected  &gt;Xlarge&lt;/option&gt;
+		
+		  &lt;option value=&quot;col-md-8&quot;  &gt;Xxlarge&lt;/option&gt;
+		
+		&lt;/select&gt;
+	&lt;/div&gt;
+&lt;/div&gt;
+
+    &lt;hr/&gt;
+    &lt;button id=&quot;save&quot; class='btn btn-info col-md-4'&gt;Save&lt;/button&gt;&amp;nbsp;&lt;button id=&quot;cancel&quot; class='btn btn-danger'&gt;Cancel&lt;/button&gt;
+&lt;/form&gt;
+" class="component"><!-- Text input-->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="Url">Url</label>  
+  <div class="col-md-6">
+  <input id="Url" name="Url" placeholder="http://....something.." class="form-control input-md" required="" type="text">
+  <span class="help-block">Full url to your site including http://</span>  
+  </div>
+</div>
+</div><div data-html="true" data-trigger="manual" data-title="Text Input" data-content="&lt;form role=&quot;form&quot;&gt;
+    
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+    &lt;div class=&quot;form-group&quot;&gt;
+	&lt;label class=&quot;col-md-12 control-label&quot;&gt; ID / Name &lt;/label&gt;
+	&lt;div class=&quot;col-md-10&quot;&gt;
+		&lt;input class='form-control field' data-type=&quot;input&quot; type='text' name='id' id='id' value ='disqus' /&gt;
+	&lt;/div&gt;
+&lt;/div&gt;&lt;div class=&quot;form-group&quot;&gt;
+	&lt;label class=&quot;col-md-12 control-label&quot;&gt; Label Text &lt;/label&gt;
+	&lt;div class=&quot;col-md-10&quot;&gt;
+		&lt;input class='form-control field' data-type=&quot;input&quot; type='text' name='label' id='label' value ='Disqus Short Name' /&gt;
+	&lt;/div&gt;
+&lt;/div&gt;&lt;div class=&quot;form-group&quot;&gt;
+	&lt;label class=&quot;col-md-12 control-label&quot;&gt; Placeholder &lt;/label&gt;
+	&lt;div class=&quot;col-md-10&quot;&gt;
+		&lt;input class='form-control field' data-type=&quot;input&quot; type='text' name='placeholder' id='placeholder' value ='something..' /&gt;
+	&lt;/div&gt;
+&lt;/div&gt;&lt;div class=&quot;form-group&quot;&gt;
+	&lt;label class=&quot;col-md-12 control-label&quot;&gt; Help Text &lt;/label&gt;
+	&lt;div class=&quot;col-md-10&quot;&gt;
+		&lt;input class='form-control field' data-type=&quot;input&quot; type='text' name='helptext' id='helptext' value ='Enter the disqus short name for disqus comments on your website. If you do not have one then get one from http://disqus.com' /&gt;
+	&lt;/div&gt;
+&lt;/div&gt;&lt;div class=&quot;checkbox&quot;&gt;
+	&lt;label&gt;
+	  &lt;input type=&quot;checkbox&quot; data-type=&quot;checkbox&quot; class=&quot;field&quot; name=&quot;required&quot; id=&quot;required&quot; checked=&quot;checked&quot; &gt;
+	  Required
+	&lt;/label&gt;
+&lt;/div&gt;
+&lt;div class=&quot;form-group&quot;&gt;
+	&lt;label class='col-md-4 control-label'&gt; Input Size &lt;/label&gt;
+	&lt;div class=&quot;col-md-5&quot;&gt;
+		&lt;select class=&quot;form-control field&quot; data-type=&quot;select&quot; id='inputsize'&gt;
+		
+		  &lt;option value=&quot;col-md-1&quot;  &gt;Mini&lt;/option&gt;
+		
+		  &lt;option value=&quot;col-md-2&quot;  &gt;Small&lt;/option&gt;
+		
+		  &lt;option value=&quot;col-md-4&quot;  &gt;Medium&lt;/option&gt;
+		
+		  &lt;option value=&quot;col-md-5&quot;  &gt;Large&lt;/option&gt;
+		
+		  &lt;option value=&quot;col-md-6&quot;  selected  &gt;Xlarge&lt;/option&gt;
+		
+		  &lt;option value=&quot;col-md-8&quot;  &gt;Xxlarge&lt;/option&gt;
+		
+		&lt;/select&gt;
+	&lt;/div&gt;
+&lt;/div&gt;
+
+    &lt;hr/&gt;
+    &lt;button id=&quot;save&quot; class='btn btn-info col-md-4'&gt;Save&lt;/button&gt;&amp;nbsp;&lt;button id=&quot;cancel&quot; class='btn btn-danger'&gt;Cancel&lt;/button&gt;
+&lt;/form&gt;
+" class="component"><!-- Text input-->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="disqus">Disqus Short Name</label>  
+  <div class="col-md-6">
+  <input id="disqus" name="disqus" placeholder="something.." class="form-control input-md" required="" type="text">
+  <span class="help-block">Enter the disqus short name for disqus comments on your website. If you do not have one then get one from http://disqus.com</span>  
+  </div>
+</div>
+</div><div data-html="true" data-trigger="manual" data-title="Text Area" data-content="&lt;form role=&quot;form&quot;&gt;
+    
+      
+      
+      
+      
+      
+      
+    &lt;div class=&quot;form-group&quot;&gt;
+	&lt;label class=&quot;col-md-12 control-label&quot;&gt; ID / Name &lt;/label&gt;
+	&lt;div class=&quot;col-md-10&quot;&gt;
+		&lt;input class='form-control field' data-type=&quot;input&quot; type='text' name='id' id='id' value ='adsense' /&gt;
+	&lt;/div&gt;
+&lt;/div&gt;&lt;div class=&quot;form-group&quot;&gt;
+	&lt;label class=&quot;col-md-12 control-label&quot;&gt; Label Text &lt;/label&gt;
+	&lt;div class=&quot;col-md-10&quot;&gt;
+		&lt;input class='form-control field' data-type=&quot;input&quot; type='text' name='label' id='label' value ='Google Adsense Code' /&gt;
+	&lt;/div&gt;
+&lt;/div&gt;&lt;div class=&quot;form-group&quot;&gt;
+	&lt;label class=&quot;col-md-12 control-label&quot;&gt; Starting Text &lt;/label&gt;
+	&lt;div class=&quot;col-md-10&quot;&gt; 
+		&lt;textarea class=&quot;form-control field&quot; data-type=&quot;textarea&quot; style='min-height: 200px' id='textarea'&gt;&lt;/textarea&gt;
+	&lt;/div&gt;
+&lt;/div&gt;
+
+    &lt;hr/&gt;
+    &lt;button id=&quot;save&quot; class='btn btn-info col-md-4'&gt;Save&lt;/button&gt;&amp;nbsp;&lt;button id=&quot;cancel&quot; class='btn btn-danger'&gt;Cancel&lt;/button&gt;
+&lt;/form&gt;
+" class="component"><!-- Textarea -->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="adsense">Google Adsense Code</label>
+  <div class="col-md-4">                     
+    <textarea class="form-control" id="adsense" name="adsense"></textarea>
+  </div>
+</div>
+</div><div title="" data-original-title="" data-html="true" data-trigger="manual" data-title="File Button" data-content="&lt;form role=&quot;form&quot;&gt;
+    
+      
+      
+      
+      
+    &lt;div class=&quot;form-group&quot;&gt;
+	&lt;label class=&quot;col-md-12 control-label&quot;&gt; ID / Name &lt;/label&gt;
+	&lt;div class=&quot;col-md-10&quot;&gt;
+		&lt;input class='form-control field' data-type=&quot;input&quot; type='text' name='id' id='id' value ='filebutton' /&gt;
+	&lt;/div&gt;
+&lt;/div&gt;&lt;div class=&quot;form-group&quot;&gt;
+	&lt;label class=&quot;col-md-12 control-label&quot;&gt; Label Text &lt;/label&gt;
+	&lt;div class=&quot;col-md-10&quot;&gt;
+		&lt;input class='form-control field' data-type=&quot;input&quot; type='text' name='label' id='label' value ='File Button' /&gt;
+	&lt;/div&gt;
+&lt;/div&gt;
+    &lt;hr/&gt;
+    &lt;button id=&quot;save&quot; class='btn btn-info col-md-4'&gt;Save&lt;/button&gt;&amp;nbsp;&lt;button id=&quot;cancel&quot; class='btn btn-danger'&gt;Cancel&lt;/button&gt;
+&lt;/form&gt;
+" class="component"><!-- File Button --> 
+<div class="form-group">
+  <label class="col-md-4 control-label" for="filebutton">File Button</label>
+  <div class="col-md-4">
+    <input id="filebutton" name="filebutton" class="input-file" type="file">
+  </div>
+</div>
+</div><div style="top: 419px; left: -255px; display: block;" class="popover fade left in"><div class="arrow"></div><h3 class="popover-title">File Button</h3><div class="popover-content"><form role="form">
+    
+      
+      
+      
+      
+    <div class="form-group">
+	<label class="col-md-12 control-label"> ID / Name </label>
+	<div class="col-md-10">
+		<input class="form-control field" data-type="input" name="id" id="id" value="logo" type="text">
+	</div>
+</div><div class="form-group">
+	<label class="col-md-12 control-label"> Label Text </label>
+	<div class="col-md-10">
+		<input class="form-control field" data-type="input" name="label" id="label" value="Upload Logo" type="text">
+	</div>
+</div>
+    <hr>
+    <button id="save" class="btn btn-info col-md-4">Save</button>&nbsp;<button id="cancel" class="btn btn-danger">Cancel</button>
+</form>
+</div></div></fieldset></form>
+            </div>
+          </div>
+        </div>
+        <!-- / Building Form. -->
+      </div>
+    </div> <!-- /container -->
+
+    <script data-main="assets3/js/main-built.js" src="formbuilder3_data/require.js"></script>
+  
+</body></html>
